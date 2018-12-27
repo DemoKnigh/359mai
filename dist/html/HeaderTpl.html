@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+			
+			ul{
+				list-style: none;
+			}
+			
+			#header-nav{
+				width: 100%;
+				height: 36px;
+				background: #f8f8f8;
+				border-bottom:1px solid #e9e9e9;
+				font-size: 12px;
+				line-height: 36px;
+			}
+			
+			#header-center{
+				width: 1190px;
+				height: 36px;
+				background: #f8f8f8;
+				margin: 0 auto;
+			}
+			
+			#header-nav-left{
+				width: 235px;
+				height: 36px;
+				float: left;
+				color: red;
+			}
+			
+			#header-nav-list{
+				float: right;
+			}
+			
+			#header-nav-list li{
+				padding: 0 11px;
+				float: left;
+			}
+			
+			#header-nav-list li a{
+				color: #000000;
+			}
+			
+			#header-nav-list li:last-of-type{
+				padding-left: 27px;
+				padding-right: 0;
+				background: url("../img/HeaderTpl/sc.png") no-repeat 0 7px;
+			}
+			
+			#header-nav-list li:nth-of-type(5){
+				padding-left: 20px;
+				padding-right: 6px;
+				width: 52px;
+				background: url("../img/HeaderTpl/phone.png") no-repeat 9px 11px;
+			}
+			
+			#header-nav-list li:nth-of-type(4){
+				padding-left: 30px;
+				color: indianred;
+				background: url("../img/HeaderTpl/phone.jpg") no-repeat 9px 11px;
+			}
+			
+			#header-nav-list li:nth-of-type(2){
+				width: 74px;
+			}
+			
+			#header-nav+a{
+				width: 1190px;
+				height: 60px;
+				margin: 0 auto;
+				display: block;
+			}
+			
+			#header-nav+a img{
+				width: 100%;
+				height: 100%;
+			}
+			
+			.header-searchPart{
+				width: 1190px;
+				height: 123px;
+				margin: 0 auto;
+				background: yellow;
+				overflow: hidden;
+			}
+			
+			.header-logobox{
+				width: 188px;
+				height: 89px;
+				margin-top: 25px;
+			}
+			
+			.header-searchbox{
+				width: 502px;
+				height: 60px;
+			}
+			
+			#header-bottom-navbox{
+				width: 1190px;
+				height: 34px;
+				border-bottom: 2px solid #1985d9;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 头部模板 -->
+		<header class="header-template" id="header-template">
+			<!-- 导航部分 -->
+			<nav class="header-nav" id="header-nav">
+				<!-- 导航版心 -->
+				<div class="header-center" id="header-center">
+					<!-- 导航左边 -->
+					<div class="header-nav-left" id="header-nav-left">
+						<span>您好！欢迎来量格购！</span>
+						<a href="javascript:;">[请登录]</a>
+						<a href="javascript:;">&nbsp;&nbsp;[免费注册]</a>
+					</div>
+					<!-- 导航右边 -->
+					<ul class="header-nav-list" id="header-nav-list">
+						<li><a href="javascript:;">我的订单</a></li>
+						<li><a href="javascript:;">我的小量</a></li>
+						<li><a href="javascript:;">帮助中心</a></li>
+						<li><b>13157632491</b></li>
+						<li><a href="javascript:;">公众号</a></li>
+						<li><a href="javascript:;">收藏</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- 中间banner图 -->
+			<a href="javascript:;">
+				<img src="../img/HeaderTpl/header-banner.png" >
+			</a>
+			<!-- 下面的搜索框部分 -->
+			<div class="header-searchPart">
+				<!-- logo -->
+				<div class="header-logobox" id="header-logobox">
+					<a href="javascript:;"><img src="../img/HeaderTpl/header-logo.png" ></a>
+				</div>
+				<div class="header-searchbox" id="header-searchbox">
+					
+				</div>
+			</div>
+			<!-- 两个导航合并一行的部分 -->
+			<div class="header-bottom-navbox" id="header-bottom-navbox">
+				<div class="header-bottom-navleft" id="header-bottom-navleft"></div>
+				<div class="header-bottom-navright" id="header-bottom-navright"></div>
+			</div>
+		</header>
+	</body>
+</html>
