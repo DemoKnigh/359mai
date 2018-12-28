@@ -11,6 +11,7 @@
 			
 			a{
 				text-decoration: none;
+				color: #000000;
 			}
 			
 			ul{
@@ -37,7 +38,10 @@
 				width: 235px;
 				height: 36px;
 				float: left;
-				color: red;
+			}
+			
+			#header-nav-left a {
+				color:#dd1f4f;
 			}
 			
 			#header-nav-list{
@@ -56,25 +60,111 @@
 			#header-nav-list li:last-of-type{
 				padding-left: 27px;
 				padding-right: 0;
-				background: url("../img/HeaderTpl/sc.png") no-repeat 0 7px;
+				background: url("../img/HeaderTpl/sc.min.png") no-repeat 0 7px;
 			}
 			
 			#header-nav-list li:nth-of-type(5){
 				padding-left: 20px;
 				padding-right: 6px;
 				width: 52px;
-				background: url("../img/HeaderTpl/phone.png") no-repeat 9px 11px;
+				background: url("../img/HeaderTpl/phone.min.png") no-repeat 9px 11px;
 			}
 			
 			#header-nav-list li:nth-of-type(4){
 				padding-left: 30px;
-				color: indianred;
-				background: url("../img/HeaderTpl/phone.jpg") no-repeat 9px 11px;
+				color: #dd1f4f;
+				background: url("../img/HeaderTpl/phone.min.jpg") no-repeat 9px 11px;
 			}
 			
 			#header-nav-list li:nth-of-type(2){
 				width: 74px;
+				background: url(../img/HeaderTpl/qian.min.png) no-repeat 78px 17px;
+				position: relative;
 			}
+			
+			.mylittleliang{
+				width: 94px;
+				height: 130px;
+				border: 1px solid darkgray;
+				position: absolute;
+				background: white;
+				left: 0px;
+				top: 5px;
+				z-index: 100;
+				display: none;
+			}
+			
+			.mylittleliang p{
+				padding: 0 10px;
+				height: 25px;
+			}
+			
+			.mylittleliang p a{
+				line-height: 1;
+				display: block;
+			}
+			
+			.mylittleliang p:nth-of-type(1){
+				height: 31px;
+				background: url(../img/HeaderTpl/qian.min.png) no-repeat 77px -20px;
+			}
+			
+			.mylittleliang p:nth-of-type(1) a{
+				height: 25px;
+				margin-top: 6px;
+			}
+			
+			.mylittleliang p:not(:nth-of-type(1)) a{
+				height: 100%;
+			}
+			
+			.header-wxCodeBox{
+				position: relative;
+			}
+			
+			.header-wxCode{
+				width: 150px;
+				height: 150px;
+				background: white;
+				border: 1px solid darkgray;
+				position: absolute;
+				top: 37px;
+				left: -22px;
+				z-index: 100;
+				padding: 15px;
+				display: none;
+			}
+			
+			.header-wxCode img{
+				width: 100%;
+				height: 100%;
+			}
+
+			 .header-coverCode{
+				width: 79px;
+				height: 33px;
+				border: 1px solid darkgray;
+				border-bottom: none;
+				position: absolute;
+				top:4px;
+				left: -2px;
+				z-index: 101;
+				background: white;
+				display: none;
+			}
+			
+			.header-coverCode span{
+				width: 60px;
+				height: 30px;
+				padding-left: 15px;
+				display: block;
+				position: absolute;
+				top: -5px;
+				left: 6px;
+				font-size: 12px;
+				background: url(../img/HeaderTpl/phone.min.png) no-repeat 4px 11px;
+				
+			} 
 			
 			#header-nav+a{
 				width: 1190px;
@@ -92,8 +182,8 @@
 				width: 1190px;
 				height: 123px;
 				margin: 0 auto;
-				background: yellow;
-				overflow: hidden;
+				border-top: 1px solid transparent;
+				position: relative;
 			}
 			
 			.header-logobox{
@@ -105,6 +195,9 @@
 			.header-searchbox{
 				width: 502px;
 				height: 60px;
+				position: absolute;
+				left: 400px;
+				top: 34px;
 			}
 			
 			#header-bottom-navbox{
@@ -112,6 +205,214 @@
 				height: 34px;
 				border-bottom: 2px solid #1985d9;
 				margin: 0 auto;
+			}
+			
+			.header-searchbox-top{
+				height: 30px;
+				border: 3px solid #0083d1;
+				margin-bottom: 8px;
+			}
+			
+			.header-searchbox-top input{
+				width: 390px;
+				height: 30px;
+				margin-left: 9px;
+				border: none;
+				outline: none;
+			}
+			
+			.header-searchbox-top a{
+				display: block;
+				width: 92px;
+				height: 30px;
+				background: #0083d1;
+				float: right;
+				color: white;
+				line-height: 30px;
+				text-align: center;
+				font-size: 18px;
+			}
+			
+			.header-searchbox-bottom div{
+				float: left;
+				font-size: 12px;
+			}
+			
+			.header-searchbox-bottom div b{
+				margin: 0 10px;
+				color: darkgray;
+				font-weight: 100;
+			}
+			
+			.header-searchbox-bot-color{
+				color: red;
+			}
+			
+			.header-cartbox{
+				display: block;
+				width: 132px;
+				height: 38px;
+				position: absolute;
+				right: 0;
+				top: 34px;
+				background: url(../img/HeaderTpl/gwc.min.gif) no-repeat;
+			}
+			
+			.cart-preview{
+				width: 320px;
+				height: 50px;
+				position: absolute;
+				right: 0;
+				top: 72px;
+				border: #e72418 1px solid;
+				border-top: #e72418 2px solid;
+				z-index: 5;
+				display: none;
+			}
+			
+			.header-bottom-navbox{
+				position:relative;
+			}
+			
+			.header-bottom-navleft{
+				width: 180px;
+				height: 36px;
+				background: #1885d8;
+				line-height: 36px;
+				color: white;
+				text-indent: 14px;
+				font-size: 14px;
+				float: left;
+			}
+			
+			.navleft-bluebar{
+				position: absolute;
+				left: 0;
+				top:36px;
+			}
+			
+			.navleft-bluebar li{
+				width: 180px;
+				height: 40px;
+				background: #2a9af0;
+				text-indent: 45px;
+				line-height: 40px;
+				font-size: 14px;
+				position: relative;
+			}
+			
+			.navleft-bluebar li a{
+				color: white;
+			}
+			
+			.navleft-bluebar li div:nth-of-type(1){
+				width: 24px;
+				height: 24px;
+				position: absolute;
+				top: 10px;
+				left: 15px;
+				background: url(../img/HeaderTpl/pop.min.gif) no-repeat;
+			}
+			
+			.navleft-bluebar li:nth-of-type(2) div{
+				background-position-y: -40px;
+			}
+			
+			.navleft-bluebar li:nth-of-type(3) div{
+				background-position-y: -80px;
+			}
+			
+			.navleft-bluebar li:nth-of-type(4) div{
+				background-position-y: -120px;
+			}
+
+			.navleft-bluebar li:nth-of-type(5) div{
+				background-position-y: -160px;
+			}
+			
+			.navleft-bluebar li:nth-of-type(6) div{
+				background-position-y: -200px;
+			}
+			
+			.navleft-bluebar li:nth-of-type(7) div{
+				background-position-y: -240px;
+			}
+			
+			.navleft-bluebar li:nth-of-type(8) div{
+				background-position-y: -280px;
+			}
+			
+			.navleft-bluebar li:nth-of-type(9) div{
+				background-position-y: -320px;
+			}
+			
+			.navleft-bluebar li:nth-of-type(10) div{
+				background-position-y: -360px;
+			}
+			
+			.bluebar-details{
+				width: 1009px;
+				height: 398px;
+				background: white;
+				border: 1px solid darkgray;
+				border-left: 1px solid transparent;
+				border-top: 1px solid transparent;
+				position: absolute;
+				left: 179px;
+				top:36px;
+				display: none;
+			}
+			
+			.bluebar-details-lt{
+				width:502px;
+				height: 398px;
+				float: left;
+			}
+			
+			.bluebar-details-rt{
+				padding-left: 300px;
+				width: 202px;
+				height: 398px;
+				float: left;
+			}
+			
+			.bluebar-details-lt span{
+				display: inline-block;
+				width: 200px;
+				height: 40px;
+				margin-left: 10px;
+				margin-top: 10px;
+				font-size: 14px;
+				font-weight: 700;
+			}
+			
+			
+			.bluebar-details-rt a{
+				display: block;
+				float: left;
+				padding-left: 10px;
+				padding-right: 10px;
+				margin-top: 6px;
+				font-size: 12px;
+			}
+			
+			.bluebar-details-rt p{
+				color: indianred;
+				font-size: 14px;
+				font-weight: 800;
+				margin: 10px;
+			}
+			
+			.header-bottom-navright{
+				float: left;
+			}
+			
+			.header-bottom-navright li{
+				height: 34px;
+				line-height: 34px;
+				padding: 0 15px;
+				font-size: 15px;
+				float: left;
 			}
 		</style>
 	</head>
@@ -131,33 +432,169 @@
 					<!-- 导航右边 -->
 					<ul class="header-nav-list" id="header-nav-list">
 						<li><a href="javascript:;">我的订单</a></li>
-						<li><a href="javascript:;">我的小量</a></li>
+						<li><a href="javascript:;" id="littleliang-parent">我的小量</a>
+							<div class="mylittleliang" id="mylittleliang">
+								<p><a href="javascript:;">我的小量</a></p>
+								<p><a href="javascript:;">我的优惠券</a></p>
+								<p><a href="javascript:;">我的收藏夹</a></p>
+								<p><a href="javascript:;">商品评价</a></p>
+								<p><a href="javascript:;">我的私人定制</a></p>
+							</div>
+						</li>
 						<li><a href="javascript:;">帮助中心</a></li>
 						<li><b>13157632491</b></li>
-						<li><a href="javascript:;">公众号</a></li>
+						<li class="header-wxCodeBox" id="header-wxCodeBox">公众号
+							<div class="header-coverCode" id="header-coverCode"><span>公众号</span></div>
+							<div class="header-wxCode" id="header-wxCode">
+								<img src="../img/HeaderTpl/header-QRcode.min.jpg" >
+							<div>
+						</li>
 						<li><a href="javascript:;">收藏</a></li>
+						
 					</ul>
+					
 				</div>
 			</nav>
 			<!-- 中间banner图 -->
 			<a href="javascript:;">
-				<img src="../img/HeaderTpl/header-banner.png" >
+				<img src="../img/HeaderTpl/header-banner.min.png" >
 			</a>
 			<!-- 下面的搜索框部分 -->
 			<div class="header-searchPart">
 				<!-- logo -->
 				<div class="header-logobox" id="header-logobox">
-					<a href="javascript:;"><img src="../img/HeaderTpl/header-logo.png" ></a>
+					<a href="javascript:;"><img src="../img/HeaderTpl/header-logo.min.png" ></a>
 				</div>
+				<!-- 搜索框 -->
 				<div class="header-searchbox" id="header-searchbox">
-					
+					<!-- 框 -->
+					<div class="header-searchbox-top">
+						<input type="text" name="search-opacity" id="search-opacity" placeholder="华为 P20 Pro" />
+						<a href="javascript:;">搜索</a>
+					</div>
+					<!-- 小导航 -->
+					<div class="header-searchbox-bottom" id="header-searchbox-bottom">
+						<div><a href="javascript:;" class="header-searchbox-bot-color">华为</a><b>|</b></div>
+						<div><a href="javascript:;" class="header-searchbox-bot-color">牛肉丸</a><b>|</b></div>
+						<div><a href="javascript:;">茶叶</a><b>|</b></div>
+						<div><a href="javascript:;">华为笔记本</a><b>|</b></div>
+					</div>
 				</div>
+				<!-- 购物车 -->
+				<a href="javascript:;" class="header-cartbox" id="header-cartbox"></a>
+				<!-- 小图显示购物车内容 -->
+				<div class="cart-preview" id="cart-preview"></div>
 			</div>
 			<!-- 两个导航合并一行的部分 -->
 			<div class="header-bottom-navbox" id="header-bottom-navbox">
-				<div class="header-bottom-navleft" id="header-bottom-navleft"></div>
-				<div class="header-bottom-navright" id="header-bottom-navright"></div>
+				<!-- 蓝色导航 -->
+				<div class="header-bottom-navleft" id="header-bottom-navleft">所有商品分类</div>
+				<ul class="navleft-bluebar" id="navleft-bluebar">
+					<li data-project-index="1"><div></div><a href="javascript:;">手机数码</a></li>
+					<li data-project-index="2"><div></div><a href="javascript:;">服饰箱包</a></li>
+					<li data-project-index="3"><div></div><a href="javascript:;">电脑办公</a></li>
+					<li data-project-index="4"><div></div><a href="javascript:;">母婴玩具</a></li>
+					<li data-project-index="5"><div></div><a href="javascript:;">食品酒水</a></li>
+					<li data-project-index="6"><div></div><a href="javascript:;">美容护肤</a></li>
+					<li data-project-index="7"><div></div><a href="javascript:;">家用电器</a></li>
+					<li data-project-index="8"><div></div><a href="javascript:;">居家用品</a></li>
+					<li data-project-index="9"><div></div><a href="javascript:;">汽配五金</a></li>
+					<li data-project-index="10"><div></div><a href="javascript:;">运动户外</a></li>
+				</ul>
+				<!-- 蓝色导航详情页 -->
+				<div class="bluebar-details" id="bluebar-details">
+					<div class="bluebar-details-lt" id="bluebar-details-lt"></div>
+					<div class="bluebar-details-rt" id="bluebar-details-rt"></div>
+				</div>
+				<!-- 白色导航 -->
+				<div class="header-bottom-navright" id="header-bottom-navright">
+					<ul>
+						<li><a href="javascript:;">首页</a></li>
+						<li><a href="javascript:;">会员中心</a></li>
+						<li><a href="javascript:;">品牌区</a></li>
+						<li><a href="javascript:;">帮助中心</a></li>
+						<li><a href="javascript:;">关于我们</a></li>
+					</ul>
+				</div>
 			</div>
 		</header>
+		
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			//鼠标移入超链接变色
+			$("#header-nav-list a,#header-bottom-navright a,#header-searchbox-bottom a:not(.header-searchbox-bot-color)").hover(
+			function(){
+				$(this).css({"color" : "blue"});
+			},function(){
+				$(this).css({"color" : "black"});
+			});
+			
+			//我的小量二级菜单
+			$("#littleliang-parent,#mylittleliang").hover(function(){
+				$("#mylittleliang").css({'display' : "block"});
+			},function(){
+				$("#mylittleliang").css({'display' : "none"});
+			});
+			
+			//二维码
+			$("#header-wxCodeBox,#header-coverCode,#header-wxCode").hover(function(){
+				$("#header-coverCode,#header-wxCode").css({"display" : "block"});
+			},function(){
+				$("#header-coverCode,#header-wxCode").css({"display" : "none"});
+			})
+			
+			//购物车预览
+			$("#header-cartbox,#cart-perview").hover(function(){
+				$("#cart-preview").css({"display" : "block"});
+			},function(){
+				$("#cart-preview").css({"display" : "none"});
+			})
+			
+			//蓝导航事件
+			$("#navleft-bluebar li").each(function(){
+				var that = this;
+				$(this).hover(function(){
+					//清除上一次的内容
+					$("#bluebar-details-lt,#bluebar-details-rt").html("");
+					//动态添加数据
+					var index = this.getAttribute("data-project-index") - 1;
+					$.getJSON("../json/bluebar.json",function(data){
+						for(var i = 0 ; i < data[index].classes.length ; i++){
+							$("<span><a href='javascript:;'>" + data[index].classes[i] + "</a></span>").appendTo($("#bluebar-details-lt"))
+						}
+					});
+					
+					$.getJSON("../json/bluebar.json",function(data){
+						var str = "<p>相关品牌</p>";
+						for(var i = 0 ; i < data[index].brand.length ; i++){
+							str += "<a href='javascript:;'>" + data[index].brand[i] + "</a>";
+						}
+						$("#bluebar-details-rt").append($(str))
+					})
+					
+					
+					
+					$(that).css({"background" : "white"});
+					$(that).children().css({"color" : "#2a9af0"});
+					$("#bluebar-details").css({"display" : "block"});
+					$(that).delay(300).animate({"margin-left" : "5px"},200);
+				},function(){
+					$(that).css({"background" : "#2a9af0"});
+					$(that).children().css({"color" : "white"});
+					$("#bluebar-details").css({"display" : "none"});
+					$(that).animate({"margin-left" : 0},50);
+					$(that).finish();
+				})
+			})
+			
+			//蓝导航详情页事件
+			$("#bluebar-details").hover(function(){
+				$("#bluebar-details").css({'display' : "block"});
+			},function(){
+				$("#bluebar-details").css({'display' : "none"});
+			})
+			
+		</script>
 	</body>
 </html>
