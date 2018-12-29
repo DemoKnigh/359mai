@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
-</html>
+//导入头部
+$('header').load("HeaderTpl.html");
+//导入尾部
+$('footer').load("FooterTpl.html");

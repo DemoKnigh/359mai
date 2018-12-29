@@ -13,4 +13,27 @@ gulp.task('imagemin',function(){
 		.pipe(imagemin())
 		.pipe(rename({'suffix' : '.min'}))
 		.pipe(gulp.dest('./dist/img/login'))
+});
+
+//压缩js
+gulp.task('jsmin',()=>{
+	gulp.src('./src/js/*.js')
+		.pipe(uglify())
+		.pipe(rename({'suffix' : '.min'}))
+		.pipe(gulp.dest('./dist/js'))
+})
+
+//编译sass,并压缩
+gulp.task('cssmin',()=>{
+	gulp.src('./src/sass/*.scss')
+		.pipe(sass())
+		.pipe(cssnano())
+		.pipe(rename({'suffix' : '.min'}))
+		.pipe(gulp.dest('./dist/css'))
+})
+
+//监听
+gulp.task('default',()=>{
+	gulp.watch('./src/js/*.js',['jsmin']);
+	gulp.watch('./src/sass/*.scss',['cssmin'])
 })
