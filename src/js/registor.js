@@ -1,0 +1,22 @@
+//导入头部
+$('header').load("HeaderTpl.html");
+//导入尾部
+$('footer').load("FooterTpl.html");
+//超链接移入变色事件
+$('#registor-changePic,#memberAgreement,#privacy-protection-policy').hover(function(){
+	$(this).css('color','#07A9EB');
+},function(){
+	$(this).css('color','blue');
+});
+//红按钮移入移出事件
+$('#registor-goLoginBtn').hover(function(){
+	$(this).css('background','#F7212C')
+},function(){
+	$(this).css('background','#D31C26')
+});
+//注册按钮移入事件
+$('#registor-registBtn').hover(function(){
+	$(this).css('background','#E14C0A')
+},function(){
+	$(this).css('background','#FC540C')
+});

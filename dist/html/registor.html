@@ -2,8 +2,133 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>Registor</title>
+		<link rel="stylesheet" type="text/css" href="../css/registor.min.css"/>
 	</head>
 	<body>
+		<header class="registorhd-from-outside"></header>
+		<section class="registor-bodyBox">
+				<div class="registorContent-left">
+					<h3 class="registorContent-title">用户注册</h3>
+					<div class="registorContent-ltBox">
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>登录账号：</span>
+							<input type="text" class="registorContent-textBox" placeholder="&nbsp;用户名/邮箱/手机号，最少4个字符">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>密码：</span>
+							<input type="text" class="registorContent-textBox" placeholder="&nbsp;6-20个字符">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>确认密码：</span>
+							<input type="text" class="registorContent-textBox" placeholder="&nbsp;再次输入密码">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>会员名：</span>
+							<input type="text" class="registorContent-textBox">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>地区：</span>
+							<select name="registor-regions" class="registor-regions">
+								<option checked>请选择</option>
+								<option>北京</option>
+								<option>上海</option>
+								<option>天津</option>
+								<option>重庆</option>
+								<option>安徽</option>
+								<option>福建</option>
+								<option>甘肃</option>
+								<option>广东</option>
+								<option>广西</option>
+								<option>贵州</option>
+								<option>海南</option>
+								<option>河北</option>
+								<option>河南</option>
+								<option>黑龙江</option>
+								<option>湖北</option>
+								<option>湖南</option>
+								<option>吉林</option>
+								<option>江苏</option>
+								<option>江西</option>
+								<option>辽宁</option>
+								<option>内蒙古</option>
+								<option>宁夏</option>
+								<option>青海</option>
+								<option>山东</option>
+								<option>山西</option>
+								<option>陕西</option>
+								<option>四川</option>
+								<option>西藏</option>
+								<option>新疆</option>
+								<option>云南</option>
+								<option>浙江</option>
+								<option>香港</option>
+								<option>澳门</option>
+								<option>台湾</option>
+							</select>
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText">联系地址：</span>
+							<input type="text" class="registorContent-textBox">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>性别：</span>
+							<span class="registorContent-sexbox">
+							<input type="radio" name="sex" class="registorContent-usersex"/>男
+							<input type="radio" name="sex" class="registorContent-usersex"/>女	
+							</span>
+							
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>手机：</span>
+							<input type="text" class="registorContent-textBox">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText">邮编：</span>
+							<input type="text" class="registorContent-textBox">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>出生日期：</span>
+							<input type="text" class="registorContent-textBox">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>QQ：</span>
+							<input type="text" class="registorContent-textBox">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText">旺旺：</span>
+							<input type="text" class="registorContent-textBox">
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-lineText"><b>*&nbsp;</b>验证码：</span>
+							<span class="verification-codeBox">
+								<input type="text" placeholder="填写验证码" class="verification-Code">
+								<img src="../img/login/vertiCode.min.png" alt="">
+								<a href="javascript:;" id="registor-changePic">看不清楚？换一个</a>
+							</span>
+						</p>
+						<p class="registorContent-ltLine">
+							<span class="registorContent-agreementBox">
+								<input type="checkbox" name="" />
+								我已阅读并同意 <a href="javascript:;" id="memberAgreement">会员注册协议</a> 和 <a href="javascript:;" id="privacy-protection-policy">隐私保护政策</a>
+							</span>
+						</p>
+						<p class="registorContent-ltLine">
+							<a href="javascript:;" class="registor-registBtn" id="registor-registBtn">注&nbsp;&nbsp;&nbsp;册</a>
+						</p>
+					</div>
+				</div>
+				<div class="registorContent-right">
+					<span class="registor-gotoLogin">
+						已经有会员帐号请直接登录
+						<a href="javascript:;" id="registor-goLoginBtn">转入登录页</a>
+					</span>
+				</div>
+		</section>
+		<footer class="registorft-from-outside"></footer>
+		
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/registor.min.js"></script>
 	</body>
 </html>

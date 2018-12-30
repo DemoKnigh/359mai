@@ -1,0 +1,154 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	color: #666666;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+.registor-bodyBox{
+	width: 1190px;
+	height: 980px;
+	margin: 0 auto;
+	margin-top: 10px;
+	.registorContent-left{
+		width:630px;
+		height: 960px;
+		border: 1px solid #ccc;
+		float: left;
+		.registorContent-title{
+			height: 44px;
+			line-height: 44px;
+			text-indent: 20px;
+			font-weight: 100;
+			border-bottom: 1px solid #cccccc;
+			font-size: 23px;
+			color: #1566C0;
+			margin-bottom: 10px;
+		};
+		.registorContent-ltLine{
+			height: 50px;
+			margin-bottom: 10px;
+			position: relative;
+			.registorContent-lineText{
+				display: block;
+				width: 145px;
+				height: 30px;
+				line-height: 30px;
+				text-align: right;
+				float: left;
+				b{
+					color: red;
+					font-weight: 100;
+				}
+			}
+			.registorContent-textBox{
+				width: 296px;
+				height: 26px;
+			};
+			.registor-regions{
+				width:70px;
+				height: 30px;
+			};
+			.registorContent-sexbox{
+				display: block;
+				float: left;
+				height:13px;
+				line-height: 13px;
+				margin-left: 5px;
+				margin-top: 8px;
+				.registorContent-usersex{
+					margin-right: 10px;
+					margin-left: 5px;
+					vertical-align: text-bottom;
+				};
+			};
+			.verification-codeBox{
+				float: left;
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				position: relative;
+				.verification-Code{
+					width: 88px;
+					height: 28px;
+					border: 1px solid #cccccc;
+					position: absolute;
+				};
+				& img{
+					display: block;
+					position: absolute;
+					width: 56px;
+					height: 30px;
+					top: 1px;
+					left: 95px;
+				};
+				#registor-changePic{
+					width: 115px;
+					height: 14px;
+					line-height: 14px;
+					display: block;
+					position: absolute;
+					top: 10px;
+					left: 157px;
+					color: blue;
+				};
+				
+			};
+			.registorContent-agreementBox{
+				display: block;
+				position: absolute;
+				left: 145px;
+				top: 15px;
+				a{
+					color: blue;
+				};
+			};
+			.registor-registBtn{
+				display: block;
+				width: 80px;
+				height: 37px;
+				line-height: 37px;
+				color: white;
+				background: #FC540B;
+				text-align: center;
+				position: absolute;
+				left: 145px;
+				top: 13px;
+			}
+			
+		};
+		
+	};
+	.registorContent-right{
+		width: 525px;
+		height: 253px;
+		margin-left: 25px;
+		border-left: 1px dotted #cccccc;
+		float: left;
+		.registor-gotoLogin{
+			display: block;
+			position: relative;
+			left: 26px;
+			top: 54px;
+			a{
+				display: block;
+				width: 142px;
+				height: 42px;
+				background: #d31c26;
+				color: white;
+				text-align: center;
+				line-height: 42px;
+				font-size:17px;
+				position: absolute;
+				top: -15px;
+				left: 170px;
+			}
+		}
+	};
+	
+}
+
