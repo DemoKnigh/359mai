@@ -2,8 +2,120 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>Cart</title>
+		<link rel="stylesheet" type="text/css" href="../css/cart.min.css"/>
 	</head>
 	<body>
+		<header class="carthd-from-outside"></header>
+		
+		<section class="cart-bodyBox">
+			<h1>购物车</h1>
+			<div class="cart-flowChart">
+				<div class="rightNowStep">
+					<div class="cart-flowChartStep">1</div>
+					<span class="cart-flowChartWord">购物车</span>
+				</div>
+				<div class="cart-flowChartArrow"></div>
+				<div class="cart-flowChartSingle">
+					<div class="cart-flowChartStep">2</div>
+					<span class="cart-flowChartWord">填写和提交订单信息</span>
+				</div>
+				<div class="cart-flowChartArrow"></div>
+				<div class="cart-flowChartSingle">
+					<div class="cart-flowChartStep">3</div>
+					<span class="cart-flowChartWord">成功提交订单</span>
+				</div>
+			</div>
+			<div class="good-title">已选择的商品</div>
+			<div class="cart-goodBox">
+				<!-- 商品标题头 -->
+				<div class="cart-goodBox-thead">
+					<div class="cart-theadbox">商品</div>
+					<div class="cart-theadbox">销售价</div>
+					<div class="cart-theadbox">数量</div>
+					<div class="cart-theadbox">优惠金额</div>
+					<div class="cart-theadbox">积分</div>
+					<div class="cart-theadbox">小计</div>
+					<div class="cart-theadbox">操作</div>
+				</div>
+				<!-- 购物车商品详情 -->
+				<div class="cart-goodBox-goods">
+					<div class="cart-goodbox">
+						<div class="cart-goodPic"><img src="../img/cart/cart-goods.min.jpg" ></div>
+						<div class="cart-goodDescribe">
+							<span class="cart-goodDescribe-word" id="cart-goodDescribe-word">华为honor/荣耀 Magic2高配版 麒麟980AI智能芯片 超广角AI三摄渐变黑 4G手机 双卡双待</span>
+							<span class="cart-goodDescribe-size" id="cart-goodDescribe-size">8+128G 黑色</span>
+						</div>
+					</div>
+					<div class="cart-goodbox cart-goodPrice">
+						<span>￥4299.00</span>
+					</div>
+					<div class="cart-goodbox cart-goodCount">
+						<a href="javascript:;" class="cart-goodMinus" id="cart-goodMinus">-</a>
+						<input type="text" class="cart-goodNum" id="cart-goodNum" value="1"></span>
+						<a href="javascript:;" class="cart-goodAdd" id="cart-goodAdd">+</a>
+					</div>
+					<div class="cart-goodbox cart-discount">
+						<span>￥0.00</span>
+					</div>
+					<div class="cart-goodbox cart-points">
+						<span>4299</span>
+					</div>
+					<div class="cart-goodbox cart-littleSum">
+						<span>￥4299.00</span>
+					</div>
+					<div class="cart-goodbox cart-operate">
+						<a href="javascript:;" class="cart-collect" id="cart-collect">收藏</a>&nbsp;&nbsp;|&nbsp;
+						<a href="javascript:;" class="cart-remove" id="cart-remove">移除</a>
+					</div>
+				</div>
+				<!-- 金额款项部分 -->
+				<div class="cart-goodBox-cashier">
+					<p class="cart-final">
+						<span>商品总金额：</span>
+						<span>￥4299.00</span>
+					</p>
+					<p class="cart-final">
+						<span>订单优惠金额：</span>
+						<span>￥0.00</span>
+					</p>
+					<p class="cart-allPrice">
+							<span>(订单可得积分4299)</span>
+							<span>总金额：</span>
+						<span>￥4299.00</span>
+					</p>
+				</div>
+				<!-- 提交订单部分 -->
+				<div class="cart-goodBox-cashierBtn">
+					<div class="cart-cashierBtnLt">
+						<a href="javascript:;" class="cart-clean">清空购物车</a>
+						<a href="javascript:;" class="cart-more">凑单商品</a>
+					</div>
+					<div class="cart-cashierBtnRt">
+						<a href="javascript:;" class="cart-continue">继续购物</a>
+						<a href="javascript:;" class="cart-buyit">下单结算 ></a>
+					</div>
+				</div>
+			</div>
+			<div class="cart-historyGoodBox">
+				<div class="cart-historyTitle">浏览过的商品</div>
+				<div class="cart-historyGoods">
+					<div class="cart-historything">
+						<img src="../img/cart/cart-other-goods.min.jpg">
+						<div class="cart-historyWord">
+							<p>潮汕正宗香菇贡丸500g</p>
+							<p>￥40.00</p>
+							<a href="javascript:;">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="cartft-from-outside"></footer>
+		
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/cart.min.js"></script>
 	</body>
 </html>

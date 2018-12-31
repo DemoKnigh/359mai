@@ -1,1 +1,338 @@
 
+.cart-bodyBox{
+	width: 1190px;
+	margin: 0 auto;
+	h1{
+		height: 40px;
+		line-height: 40px;
+		font-size: 24px;
+		text-indent: 30px;
+		font-weight: 100;
+		background: url(../img/cart/cartlogo.min.jpg) no-repeat left 5px;
+	};
+	.cart-flowChart{
+		width: 1190px;
+		height: 66px;
+		margin: 0 auto;
+		.cart-flowChartSingle{
+			margin-top: 18px;
+			padding-left: 13px;
+			padding-top: 4px;
+			width: 320px;
+			height: 28px;
+			line-height: 28px;
+			background: #efefef;
+			float: left;
+			.cart-flowChartStep{
+				width: 22px;
+				height: 22px;
+				line-height: 22px;
+				text-align: center;
+				border-radius: 50%;
+				background: #cbcbcb;
+				color: white;
+				float: left;
+			};
+			.cart-flowChartWord{
+				display: block;
+				float: left;
+				height: 22px;
+				line-height: 22px;
+				text-indent: 8px;
+			}
+		};
+		.rightNowStep{
+			@extend .cart-flowChartSingle;
+			background: #faa419;
+			& .cart-flowChartStep{
+				color: #faa419;
+				background: white;
+			};
+			& .cart-flowChartWord{
+				color: white;
+			};
+		};
+		.cart-flowChartArrow{
+			margin-top: 18px;
+			width: 95px;
+			height: 32px;
+			float: left;
+			background: url(../img/cart/rightarrow.min.jpg) no-repeat;
+		};
+	};
+	.good-title{
+		height: 27px;
+		line-height: 27px;
+		font-size: 15px;
+		text-indent: 11px;
+	};
+	.cart-goodBox{
+		width: 1188px;
+		margin: 0 auto;
+		border: 1px solid #e6e6e6;
+		margin-bottom: 10px;
+		.cart-goodBox-thead{
+			height: 37px;
+			background: #efefef;
+			.cart-theadbox{
+				width: 100px;
+				height: 37px;
+				line-height: 37px;
+				text-align: center;
+				float: left;
+			};
+			.cart-theadbox:nth-of-type(1){
+				width: 588px;
+			};
+		};
+		.cart-goodBox-goods{
+			height: 105px;
+			border-bottom: 1px solid #e6e6e6;
+			.cart-goodbox{
+				width: 100px;
+				height: 90px;
+				text-align: center;
+				float: left;
+				padding-top: 15px;
+			};
+			.cart-goodbox:nth-of-type(1){
+				width: 579px;
+				padding-left: 9px;
+				.cart-goodPic{
+					width: 80px;
+					height: 80px;
+					border: 1px solid #e6e6e6;
+					float: left;
+					& img{
+						width: 100%;
+						height: 100%;
+					};
+				};
+				.cart-goodDescribe{
+					float: left;
+					width:488px;
+					font-size: 10px;
+					margin-left: 9px;
+					& .cart-goodDescribe-word{
+						display: block;
+						text-align: left;
+						font-size: 10px;
+					};
+					& .cart-goodDescribe-size{
+						display: block;
+						width: 83px;
+						height: 20px;
+						text-align: center;
+						line-height: 20px;
+						margin-top: 5px;
+						background: #efefef;
+						font-size: 10px;
+					};
+				};
+			};
+			.cart-goodPrice{
+				span{
+					text-align: center;
+					font-size: 10px;
+				};
+			};
+			.cart-goodCount{
+				width: 78px;
+				padding-left: 11px;
+				padding-right: 11px;
+				.cart-goodMinus{
+					width: 20px;
+					height: 21px;
+					display: block;
+					border: 1px solid #a9a9a9;
+					line-height: 21px;
+					text-align: center;
+					float: left;
+				};
+				.cart-goodNum{
+					@extend .cart-goodMinus;
+					width: 30px;
+					border-left: none;
+					border-right: none;
+				};
+				.cart-goodAdd{
+					@extend .cart-goodMinus;
+				};
+			};
+			.cart-discount{
+				span{
+					font-size: 10px;
+				};
+			};
+			.cart-points{
+				span{
+					font-size: 10px;
+				};
+			};
+			.cart-littleSum{
+				span{
+					font-size: 10px;
+					color: red;
+				};
+			};
+			.cart-operate{
+				.cart-collect,.cart-remove{
+					font-size: 10px;
+					color: blue;
+				};
+			};
+		};
+		.cart-goodBox-cashier{
+			width: 364px;
+			height: 103px;
+			padding-top: 24px;
+			padding-left: 826px;
+			.cart-final{
+				height:30px;
+				span:nth-of-type(1){
+					display: block;
+					width: 200px;
+					text-align: right;
+					float: left;
+				};
+				span:nth-of-type(2){
+					display: block;
+					width: 150px;
+					float: left;
+					margin-left: 12px;
+					color: red;
+				};
+			};
+			.cart-allPrice{
+				height: 40px;
+				span:nth-of-type(1){
+					display: block;
+					float: left;
+					width: 148px;
+					text-align: right;
+					font-size: 10px;
+					position: relative;
+					top: 6px;
+				}
+				span:nth-of-type(2){
+					font-weight: bold;
+					display: block;
+					float: left;
+					position: relative;
+					top: 5px;
+				};
+				span:nth-of-type(3){
+					display: block;
+					float: left;
+					width: 150px;
+					margin-left: 12px;
+					font-size: 18px;
+					font-weight: 800;
+					color: red;
+				};
+			};
+		};
+		.cart-goodBox-cashierBtn{
+			height: 62px;
+			background: #efefef;
+			.cart-cashierBtnLt{
+				width: 195px;
+				height: 43px;
+				padding-top: 19px;
+				padding-left: 15px;
+				float: left;
+				.cart-clean{
+					width: 80px;
+					height: 23px;
+					border: 1px solid #cccccc;
+					text-align: center;
+					line-height: 23px;
+					display: block;
+					float: left;
+					background: white;
+				};
+				.cart-more{
+					width: 80px;
+					height: 25px;
+					line-height: 25px;
+					text-align: center;
+					background: #f49012;
+					color: white;
+					display: block;
+					float: left;
+					margin-left: 10px;
+				};
+			};
+			.cart-cashierBtnRt{
+				width: 220px;
+				height: 62px;
+				float: right;
+				.cart-continue{
+					line-height: 62px;
+					text-decoration: underline;
+				};
+				.cart-buyit{
+					display: block;
+					width: 143px;
+					height: 42px;
+					line-height: 42px;
+					font-size: 16px;
+					text-align: center;
+					color: white;
+					background: #d81e28;
+					float: right;
+					position: relative;
+					top: 10px;
+					right: 15px;
+				};
+			};
+		};
+	};
+	.cart-historyGoodBox{
+		width: 1190px;
+		margin: 0 auto;
+		border: 1px solid #e6e6e6;
+		.cart-historyTitle{
+			height: 37px;
+			background: #efefef;
+			text-indent: 14px;
+			line-height: 37px;
+		};
+		.cart-historyGoods{
+			height: 98px;
+			padding: 15px 18px;
+			.cart-historything{
+				width: 210px;
+				height: 98px;
+				img{
+					width: 96px;
+					height: 96px;
+					border: 1px solid #e6e6e6;
+				};
+				.cart-historyWord{
+					width: 101px;
+					height: 98px;
+					float: right;
+					p:nth-of-type(1){
+						line-height: 20px;
+					};
+					p:nth-of-type(2){
+						height: 33px;
+						line-height: 33px;
+						color: red;
+					};
+					a{
+						width: 101px;
+						height: 25px;
+						display: block;
+						line-height: 25px;
+						text-align: center;
+						background: #fc530b;
+						color: white;
+					};
+				};
+			};
+		};
+	};
+}
+

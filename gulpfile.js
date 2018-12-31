@@ -9,10 +9,10 @@ const imagemin = require("gulp-imagemin");
 //发布任务
 //压缩图片
 gulp.task('imagemin',function(){
-	gulp.src('./src/img/login/*')
+	gulp.src('./src/img/details/*')
 		.pipe(imagemin())
 		.pipe(rename({'suffix' : '.min'}))
-		.pipe(gulp.dest('./dist/img/login'))
+		.pipe(gulp.dest('./dist/img/details'))
 });
 
 //压缩js
@@ -35,5 +35,5 @@ gulp.task('cssmin',()=>{
 //监听
 gulp.task('default',()=>{
 	gulp.watch('./src/js/*.js',['jsmin']);
-	gulp.watch('./src/sass/*.scss',['cssmin'])
+	gulp.watch('./src/sass/*.scss',['cssmin']);
 })

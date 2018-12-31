@@ -1,0 +1,50 @@
+.details-bodyBox{
+	width: 1190px;
+	margin: 0 auto;
+	overflow: hidden;
+	.details-headtitle{
+		height: 45px;
+		background: yellow;
+		line-height: 45px;
+		.details-littlenav:nth-of-type(1){
+			padding-left: 22px;
+			background: url(../img/details/house.min.jpg) no-repeat 5px 3px; 
+		};
+		.details-littlenav+span{
+			padding: 0 15px;
+		}
+	};
+	.details-leftPart{
+		width: 995px;
+		float: left;
+		background: yellow;
+	};
+	.details-rightPart{
+		width: 180px;
+		float: right;
+		background: orange;
+		.details-rightType{
+			height: 110px;
+			margin-bottom: 15px;
+			border: 1px solid #dbdbdb;
+			h3{
+				height: 36px;
+				line-height: 36px;
+				text-indent: 9px;
+				background: #dbdbdb;
+			};
+			p{
+				height: 36px;
+				line-height: 36px;
+				color: #d0000a;
+				border-top: 1px solid #e6e6e6;
+				background: #f6f6f6;
+			};
+		};
+		.details-hotgood{
+			height: 1189px;
+			border: 1px solid #dbdbdb;
+			background: blue;
+		};
+	};
+};
