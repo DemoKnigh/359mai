@@ -2,8 +2,337 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>List</title>
+		<link rel="stylesheet" href="../css/head&foot.min.css">
+		<link rel="stylesheet" href="../css/list.min.css">
 	</head>
 	<body>
+		<header class="listhd-from-outside"></header>
+		
+		<section class="list-bodyBox">
+			<div class="list-bodytitle">
+				<a href="javascript:;" class="list-littlenav">首页</a><span>></span>
+				<a href="javascript:;" class="list-littlenav">手机数码</a><span>></span>
+				<a href="javascript:;" class="list-littlenav">手机</a>
+			</div>
+			<div class="list-leftPart"></div>
+			<div class="list-rightPart">
+				<div class="list-rtfirstPart">
+					<h2 class="list-part1title">商品筛选
+						<span>(共</span>
+						<b>25</b>
+						<span>件商品)</span>
+						<a href="javascript:;">重置筛选项></a>
+					</h2>
+					<h3 class="list-part1divide">您已选择：</h3>
+					<div class="list-part1tail">
+						<p>
+							<span>品牌：</span>
+							<span class="part1tailchecked">不限</span>
+							<span>HUAWEI/华为</span>
+							<span>xiaomi/小米</span>
+							<span>OPPO/欧珀</span>
+							<span>vivo/步步高</span>
+						</p>
+						<p>
+							<span>价格：</span>
+							<span class="part1tailchecked">不限</span>
+							<span>0-500元</span>
+							<span>500-1000元</span>
+							<span>1000-1999元</span>
+							<span>2000-2999元</span>
+							<span>3000-3999元</span>
+							<span>4000-5999元</span>
+							<span>6000-10000元</span>
+							<span><input type="text" name="minprice" id="minprice"/>-<input type="text" name="maxprice" id="maxprice"></span>
+						</p>
+					</div>
+				</div>
+				<div class="list-rtsecondPart">
+					<div class="list-part2title">
+						<div id="checkednow">默认</div>
+						<div>价格</div>
+						<div>销量</div>
+						<div>排序：
+							<select>
+								<option checked>默认</option>
+								<option>按价格 从高到低</option>
+								<option>按价格 从低到高</option>
+								<option>访问周次数</option>
+								<option>总访问次数</option>
+								<option>周购买次数</option>
+								<option>总购买次数</option>
+								<option>评论次数</option>
+							</select>
+						</div>
+						<div>大图</div>
+						<div>列表</div>
+						<div>
+							<input type="checkbox" name="onlyshowyes" id="onlyshowyes"/>
+							仅显示有货
+						</div>
+					</div>
+					<p class="list-part2tail">筛选：</p>
+				</div>
+				<div class="list-rtthirdPart">
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-1.min.jpg" alt="right-list-1.min.jpg">
+						<p>华为honor/荣耀 Magic2高配版 麒麟980AI智能芯片 超广角AI三摄渐变黑 4G</p>
+						<p><b>￥4299.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-2.min.jpg" alt="right-list-2.min.jpg">
+						<p>Xiaomi/小米8 4G手机全新正品全面屏骁龙845</p>
+						<p><b>￥2599.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-3.min.jpg" alt="right-list-3.min.jpg">
+						<p>Huawei/华为 Mate 20 麒麟980AI智能芯片全面屏徕卡三摄全网通4G手机</p>
+						<p><b>￥4499.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-4.min.jpg" alt="right-list-4.min.jpg">
+						<p>华为honor/荣耀 荣耀play高配版学生游戏全网通4G手机</p>
+						<p><b>￥1999.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-5.min.jpg" alt="right-list-5.min.jpg">
+						<p>Huawei/华为 nova3 6+128G全面屏4G手机正品新款</p>
+						<p><b>￥2799.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-6.min.jpg" alt="right-list-6.min.jpg">
+						<p>OPPO R17 2500万美颜拍照 6.4英寸水滴屏 光感屏幕指纹全网通4G双卡双待手</p>
+						<p><b>￥2999.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-7.min.jpg" alt="right-list-7.min.jpg">
+						<p>Xiaomi/小米 8SE 全面屏智能手机 6GB+128GB 全网通4G双卡双待拍照游</p>
+						<p><b>￥2099.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-8.min.jpg" alt="right-list-8.min.jpg">
+						<p>现货送百元礼/Huawei/华为 nova 3e手机3e全面屏4G手机</p>
+						<p><b>￥2199.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-9.min.jpg" alt="right-list-9.min.jpg">
+						<p>vivo NEX 零界全面屏 升降式前置摄像头拍照 8GB运存 4G全网通双卡双待</p>
+						<p><b>￥4298.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-10.min.jpg" alt="right-list-10.min.jpg">
+						<p>Huawei/华为 荣耀10青春版 幻彩渐变 2400万AI自拍 6G运存 全网通高配版全</p>
+						<p><b>￥1699.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-11.min.jpg" alt="right-list-11.min.jpg">
+						<p>Xiaomi/小米 MIX2S 全面屏游戏手机 全网通4G手机</p>
+						<p><b>￥2699.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-12.min.jpg" alt="right-list-12.min.jpg">
+						<p>Huawei/华为 Mate 20 Pro 麒麟980芯片全面屏徕卡三摄全网通版4G手机</p>
+						<p><b>￥6868.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-13.min.jpg" alt="right-list-13.min.jpg">
+						<p>Huawei/华为 mate20 X 麒麟980AI智能芯片全面屏徕卡三摄全网通4G手机</p>
+						<p><b>￥4999.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-14.min.jpg" alt="right-list-14.min.jpg">
+						<p>Huawei/华为 畅享9 Plus 四摄超清全面屏大电池全网通4G手机 双卡双待</p>
+						<p><b>￥1699.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-15.min.jpg" alt="right-list-15.min.jpg">
+						<p>华为honor/荣耀 荣耀10智能拍照AI手机</p>
+						<p><b>￥2598.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-16.min.jpg" alt="right-list-16.min.jpg">
+						<p>OPPO A3全面屏拍照 4GB+128GB 全网通4G双卡双待手机</p>
+						<p><b>￥1799.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-17.min.jpg" alt="right-list-17.min.jpg">
+						<p>vivo X23 8GB+128GB 水滴屏全面屏游戏手机全网通4G手机 双卡双待</p>
+						<p><b>￥3498.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-18.min.jpg" alt="right-list-18.min.jpg">
+						<p>Huawei/华为 nova 2s高配版 全面屏4G手机双卡双待</p>
+						<p><b>￥2199.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-19.min.jpg" alt="right-list-19.min.jpg">
+						<p>Huawei/华为 P20 AI智慧全面屏全网通4G手机 双卡双待</p>
+						<p><b>￥3388.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+					<div class="list-p3goodBox">
+						<img src="../img/list/right-list-20.min.jpg" alt="right-list-20.min.jpg">
+						<p>Huawei/华为 P20 pro 全面屏徕卡三摄全网通4G手机 双卡双待</p>
+						<p><b>￥4988.00</b><span>暂无评价</span></p>
+						<p>
+							<a href="javascript:;" class="jian" id="jian">-</a>
+							<input type="text" value="1">
+							<a href="javascript:;" class="jia" id="jia">+</a>
+							<span>加入购物车</span>
+						</p>
+						<p><input type="button" name="shoucang" id="shoucang" value="收藏" /></p>
+					</div>
+				</div>
+				<div class="list-rtforthPart">
+					<p>
+						<a href="javascript:;"><</a>
+						<a href="javascript:;">1</a>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;">></a>
+					</p>
+				</div>
+			</div>
+
+		</section>
+		
+		<footer class="listft-from-outside"></footer>
+		
+		
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/list.min.js"></script>
 	</body>
 </html>

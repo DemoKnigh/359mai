@@ -1,1 +1,233 @@
-
+.index-bodyBox{
+	width: 1190px;
+	margin: 0 auto;
+	.first-Box{
+		padding-left: 180px;
+		width: 1010px;
+		height: 400px;
+		margin-bottom: 10px;
+		.circle{
+			width: 750px;
+			height: 400px;
+			background: yellow;
+			float: left;
+		};
+		.gonggao{
+			width: 258px;
+			border-left: 1px solid #e8e8e8;
+			border-right: 1px solid #e8e8e8;
+			float: left;
+			.zixuntitle{
+				padding-left: 9px;
+				height: 37px;
+				border-bottom: 1px solid #e8e8e8;
+				line-height: 37px;
+				font-size: 15px;
+				font-weight: normal;
+				background: url(../img/index/phonenumber.min.jpg) no-repeat right;
+			};
+			.zixunbox{
+				height: 132px;
+				padding-top: 10px;
+				padding-bottom: 18px;
+				border-bottom: 1px solid #e8e8e8;
+				.footer-animateRespective{
+					width: 64px;
+					height: 75px;
+					.footer-animateLogo{
+						margin-bottom: 0;
+					};
+				};
+				.footer-animateRespective:nth-of-type(2) div{
+					background-position-x: -64px;
+				};
+				
+				.footer-animateRespective:nth-of-type(3) div{
+					background-position-x: -129px;
+				};
+				
+				.footer-animateRespective:nth-of-type(4) div{
+					background-position-x: -194px;
+				};
+				
+				.footer-animateRespective:nth-of-type(5) div{
+					background-position-x: -260px;
+				};
+				
+				.footer-animateRespective:nth-of-type(6) div{
+					background-position-x: -326px;
+				};
+				
+				.footer-animateRespective:nth-of-type(7) div{
+					background-position-x: -391px;
+				};
+				
+				.footer-animateRespective:nth-of-type(8) div{
+					background-position-x: -458px;
+				};
+			};
+			.latesttitle{
+				@extend .zixuntitle;
+				background: none;
+				a{
+					margin-left: 135px;
+					color: red;
+				};
+			};
+			.latestnew{
+				border-bottom: 1px solid #efefef;
+				li{
+					padding-left: 20px;
+					line-height: 26px;
+					height: 26px;
+					background: url(../img/index/point.min.jpg) no-repeat 3px 7px;
+				};
+			};
+			
+		};
+	};
+	.second-Box{
+		height: 150px;
+		margin-bottom: 40px;
+		a{
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.clock-box{
+			width: 180px;
+			height: 150px;
+			float: left;
+			background: url(../img/index/clock.min.png) no-repeat;
+			.clock-point{
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				position: relative;
+				top: 57px;
+				left: 87px;
+				background: #1985D9;
+			};
+			.clock-hourhand{
+				width: 10px;
+				height: 3px;
+				background: #1985D9;
+				position: relative;
+				top: 49px;
+				left: 79px;
+				transform: rotate(39deg);
+			};
+			.clock-minutehand{
+				width: 19px;
+				height: 3px;
+				background: #1985D9;
+				position: relative;
+				top: 48px;
+				left: 75px;
+				transform: rotate(-48deg);
+			};
+			.clock-secondhand{
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background: white;
+				position: relative;
+				left: 82px;
+				top: 52px;
+			};
+		};
+		div:nth-of-type(2){
+			width: 252px;
+			height: 150px;
+			background: blue;
+			float: left;
+		};
+		div:nth-of-type(2):hover{
+			opacity: 0.6;
+		};	
+		div:nth-of-type(3){
+			@extend div:nth-of-type(2);
+		};
+		div:nth-of-type(4){
+			@extend div:nth-of-type(2);
+		};
+		div:nth-of-type(5){
+			@extend div:nth-of-type(2);
+			margin-left: 1px;
+		};
+	};
+	.third-Box{
+		width: 1190px;
+		height: 400px;
+		border-top: 2px solid #fb4f4f;
+		.third-ltbox{
+			width: 180px;
+			float: left;
+			h1{
+				height: 87px;
+				line-height: 87px;
+				text-align: center;
+				color: white;
+				background: #fc4e4d;
+				font-size: 20px;
+				font-weight: normal;
+			};
+			img{
+				width: 100%;
+				height: 100%;
+			};
+		};
+		.third-rtbox{
+			width: 1010px;
+			height: 400px;
+			float: left;
+			display: flex;
+			flex-wrap: wrap;
+			li{
+				width: 201px;
+				height: 200px;
+				border-right: 1px solid #e8e8e8;
+				border-bottom: 1px solid #e8e8e8;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				align-items: center;
+				img{
+					width: 130px;
+					height: 130px;
+					margin-top: 15px;
+				};
+				span{
+					line-height: 24px;
+				};
+				span:nth-of-type(2){
+					font-weight: bold;
+					color: red;
+				};
+			};
+		};
+	};
+	.forth-Box{
+		width: 1190px;
+		height: 100px;
+		margin: 30px 0;
+	};
+	.fifth-Box{
+		@extend .third-Box;
+		margin-bottom: 30px;
+		.fifth-ltbox{
+			@extend .third-ltbox;
+		};
+		.fifth-rtbox{
+			@extend .third-rtbox;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+};

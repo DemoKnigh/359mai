@@ -1,4 +1,3 @@
-
 //头部的js
 
 //鼠标移入超链接变色
@@ -37,6 +36,14 @@ $("#bluebar-details").hover(function(){
 	$("#bluebar-details").css({'display' : "none"});
 })
 
+// //蓝导航自身事件
+// $('#header-bottom-navleft,#navleft-bluebar,#bluebar-details').hover(function(){
+// 	$('#navleft-bluebar').css("display","block");
+// },function(){
+// 	$('#navleft-bluebar').css("display","none");
+// })
+
+
 
 //尾部
 
@@ -50,29 +57,4 @@ $("#footer-animateBox a").each(function(){
 			$(that).children(".footer-animateLogo").delay(0).animate({"top" : 0},50)
 		});
 	});
-});
-
-
-$("#zixunbox a").each(function(){
-	var that = this;
-	$(this).mouseenter(function(){
-		$(that).children(".footer-animateLogo").css({"position" : "relative"})
-		$(that).children(".footer-animateLogo").delay(0).animate({"top" : "-7px"},200,function(){
-			$(that).children(".footer-animateLogo").delay(0).animate({"top" : 0},50)
-		});
-	});
-});
-
-//闹钟秒针点
-	var r = 23; 
-	var x = 59;  
-	var y = 51;  
-	var num = 0;  
-	setInterval(function(){		
-		num++;			
-		var a = Math.sin( num*Math.PI/180 ) * r;
-		var b = Math.cos( num*Math.PI/180 ) * r;
-		$('.clock-secondhand').css({"left" : x+b+"px","top" : y+a+"px"});
-	},10);
-	
-	
+})

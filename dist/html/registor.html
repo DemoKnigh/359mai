@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Registor</title>
+		<link rel="stylesheet" href="../css/head&foot.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/registor.min.css"/>
 	</head>
 	<body>
@@ -11,25 +12,30 @@
 				<div class="registorContent-left">
 					<h3 class="registorContent-title">用户注册</h3>
 					<div class="registorContent-ltBox">
+						<!-- 帐号名 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>登录账号：</span>
-							<input type="text" class="registorContent-textBox" placeholder="&nbsp;用户名/邮箱/手机号，最少4个字符">
+							<input type="text" class="registorContent-textBox" id="logName" placeholder="&nbsp;用户名/邮箱/手机号，最少4个字符">
 						</p>
+						<!-- 密码 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>密码：</span>
-							<input type="text" class="registorContent-textBox" placeholder="&nbsp;6-20个字符">
+							<input type="text" class="registorContent-textBox" id="logPwd" placeholder="&nbsp;6-20个字符">
 						</p>
+						<!-- 再次输入密码 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>确认密码：</span>
-							<input type="text" class="registorContent-textBox" placeholder="&nbsp;再次输入密码">
+							<input type="text" class="registorContent-textBox" id="logPwd2" placeholder="&nbsp;再次输入密码">
 						</p>
+						<!-- 会员名 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>会员名：</span>
-							<input type="text" class="registorContent-textBox">
+							<input type="text" class="registorContent-textBox" id="logNickname">
 						</p>
+						<!-- 地区 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>地区：</span>
-							<select name="registor-regions" class="registor-regions">
+							<select name="registor-regions" class="registor-regions" id="logPlace">
 								<option checked>请选择</option>
 								<option>北京</option>
 								<option>上海</option>
@@ -67,10 +73,12 @@
 								<option>台湾</option>
 							</select>
 						</p>
+						<!-- 地址 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText">联系地址：</span>
 							<input type="text" class="registorContent-textBox">
 						</p>
+						<!-- 性别 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>性别：</span>
 							<span class="registorContent-sexbox">
@@ -79,30 +87,36 @@
 							</span>
 							
 						</p>
+						<!-- 手机号 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>手机：</span>
-							<input type="text" class="registorContent-textBox">
+							<input type="text" class="registorContent-textBox" id="logNumber">
 						</p>
+						<!-- 邮编 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText">邮编：</span>
 							<input type="text" class="registorContent-textBox">
 						</p>
+						<!-- 生日 -->
 						<p class="registorContent-ltLine">
-							<span class="registorContent-lineText"><b>*&nbsp;</b>出生日期：</span>
+							<span class="registorContent-lineText">出生日期：</span>
 							<input type="text" class="registorContent-textBox">
 						</p>
+						<!-- qq -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>QQ：</span>
-							<input type="text" class="registorContent-textBox">
+							<input type="text" class="registorContent-textBox" id="logQQ" placeholder="请输入5-10位QQ号">
 						</p>
+						<!-- 旺旺 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText">旺旺：</span>
 							<input type="text" class="registorContent-textBox">
 						</p>
+						<!-- 验证码 -->
 						<p class="registorContent-ltLine">
 							<span class="registorContent-lineText"><b>*&nbsp;</b>验证码：</span>
 							<span class="verification-codeBox">
-								<input type="text" placeholder="填写验证码" class="verification-Code">
+								<input type="text" placeholder="填写验证码" class="verification-Code" id="logCode">
 								<img src="../img/login/vertiCode.min.png" alt="">
 								<a href="javascript:;" id="registor-changePic">看不清楚？换一个</a>
 							</span>
@@ -121,7 +135,7 @@
 				<div class="registorContent-right">
 					<span class="registor-gotoLogin">
 						已经有会员帐号请直接登录
-						<a href="javascript:;" id="registor-goLoginBtn">转入登录页</a>
+						<a href="login.html" id="registor-goLoginBtn">转入登录页</a>
 					</span>
 				</div>
 		</section>
