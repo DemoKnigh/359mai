@@ -256,9 +256,21 @@ ul{
 	background: url(../img/HeaderTpl/gwc.min.gif) no-repeat;
 }
 
+.cart-litNum{
+	width: 5px;
+	height: 5px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top: 37px;
+	right: 78px;
+};
+
 .cart-preview{
 	width: 320px;
 	height: 50px;
+	line-height: 50px;
+	text-align: center;
 	position: absolute;
 	right: 0;
 	top: 72px;

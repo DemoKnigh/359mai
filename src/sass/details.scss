@@ -33,10 +33,51 @@
 					height: 348px;
 					border: 1px solid #dddddd;
 					margin-bottom: 15px;
+					position: relative;
 					img{
-						width: 100%;
-						height: 100%;
+						width: 348px;
+						height: 348px;
+						position: absolute;
+						opacity: 0;
 					};
+					.BigpicforNow{
+						opacity: 1;
+					};
+					.mark{
+						position: absolute;
+						width: 348px;
+						height: 348px;
+						z-index: 2;
+					};
+					.slidecube{
+						width: 250px;
+						height: 250px;
+						background: skyblue;
+						opacity: 0.4;
+						position: absolute;
+						display: none;
+					};
+					.largepart{
+						width: 360px;
+						height: 360px;
+						border: 1px solid lightgray;
+						position: absolute;
+						left: 370px;
+						top: 0px;
+						display: none;
+						overflow: hidden;
+						img{
+							width: 430px;
+							height: 430px;
+							opacity: 1;
+							z-index: 5;
+							position: absolute;
+							display: none;
+						};
+						.LargepicforNow{
+							display: block;
+						}
+					}
 				};
 				.details-ltlitpicBox{
 					height: 65px;
@@ -50,6 +91,9 @@
 							border: 1px solid #DDDDDD;
 							margin: 0 5px;
 						};
+						.SmallpicforNow{
+							box-shadow: 0 0 0 2px orange ;
+						}
 					};
 					.datails-ltbtn{
 						width: 14px;
@@ -68,12 +112,22 @@
 				p{
 					margin-top: 15px;
 					.details-tellothers{
-						padding: 6px 20px 8px 22px;
+						padding: 6px 12px 8px 30px;
 						margin-left: 110px;
 						margin-right: 6px;
+						background: #f7f7f7 url(../img/details/fenxiang.min.png) no-repeat 10px 6px;
+						border: 1px solid #ccc;
+						border-radius: 2px;
+						outline: none;
+						cursor: pointer;
 					};
 					.details-notbuyNow{
-						padding: 7px 13px 9px 17px;
+						padding: 6px 13px 8px 27px;
+						background: #f7f7f7 url(../img/details/orstar.min.png) no-repeat 10px 6px;
+						border: 1px solid #ccc;
+						border-radius: 2px;
+						outline: none;
+						cursor: pointer;
 					};
 				};
 			};
@@ -133,10 +187,18 @@
 						text-align: center;
 						line-height: 22px;
 						background: #f7f7f7;
+						cursor: pointer;
+					};
+					.wantbuycolor{
+						border-color: transparent;
+						box-shadow: 0 0 0 2px indianred;
 					};
 					.good-insidesize{
 						@extend .good-color;
 						width: 58px;
+					};
+					.wantbuysize{
+						@extend .wantbuycolor;
 					}
 				};
 				.good-number{

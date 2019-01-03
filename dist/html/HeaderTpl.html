@@ -14,8 +14,8 @@
 					<!-- 导航左边 -->
 					<div class="header-nav-left" id="header-nav-left">
 						<span>您好！欢迎来量格购！</span>
-						<a href="javascript:;">[请登录]</a>
-						<a href="javascript:;">&nbsp;&nbsp;[免费注册]</a>
+						<a href="login.html">[请登录]</a>
+						<a href="registor.html">&nbsp;&nbsp;[免费注册]</a>
 					</div>
 					<!-- 导航右边 -->
 					<ul class="header-nav-list" id="header-nav-list">
@@ -51,7 +51,7 @@
 			<div class="header-searchPart">
 				<!-- logo -->
 				<div class="header-logobox" id="header-logobox">
-					<a href="javascript:;"><img src="../img/HeaderTpl/header-logo.min.png" ></a>
+					<a href="index.html"><img src="../img/HeaderTpl/header-logo.min.png" ></a>
 				</div>
 				<!-- 搜索框 -->
 				<div class="header-searchbox" id="header-searchbox">
@@ -69,9 +69,11 @@
 					</div>
 				</div>
 				<!-- 购物车 -->
-				<a href="javascript:;" class="header-cartbox" id="header-cartbox"></a>
+				<a href="cart.html" class="header-cartbox" id="header-cartbox"></a>
+				<!-- 购物车上面的数字 -->
+				<div class="cart-litNum">1</div>
 				<!-- 小图显示购物车内容 -->
-				<div class="cart-preview" id="cart-preview"></div>
+				<div class="cart-preview" id="cart-preview">购物车中有一件商品呦，快去看看吧</div>
 			</div>
 			<!-- 两个导航合并一行的部分 -->
 			<div class="header-bottom-navbox" id="header-bottom-navbox">
@@ -121,7 +123,7 @@
 					var index = this.getAttribute("data-project-index") - 1;
 					$.getJSON("../json/bluebar.json",function(data){
 						for(var i = 0 ; i < data[index].classes.length ; i++){
-							$("<span><a href='javascript:;'>" + data[index].classes[i] + "</a></span>").appendTo($("#bluebar-details-lt"))
+							$("<span><a href='list.html'>" + data[index].classes[i] + "</a></span>").appendTo($("#bluebar-details-lt"))
 						}
 					});
 					

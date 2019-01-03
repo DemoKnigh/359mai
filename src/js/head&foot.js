@@ -47,13 +47,6 @@ $('#header-bottom-navleft,#navleft-bluebar,#bluebar-details').hover(function(){
 
 //尾部
 
-// //设置闲杂友军网站
-// $.getJSON("../json/footer-friendsnet.json",function(data){
-// 	$(data).each(function(){
-// 		$("#footer-friendsnet").append($("<a href='javascript:;'>" + this + "</a>"));
-// 	})
-// })
-
 //给跳动logo加动作
 $("#footer-animateBox a").each(function(){
 	var that = this;
